@@ -1,5 +1,4 @@
 body {
-  background-color: #14131a;
   color: #fff;
   font-family: 'Roboto',
   sans-serif;
@@ -10,6 +9,7 @@ body {
   margin: auto;
 }
 
+/* header */
 .header {
   display: flex;
   align-items: center;
@@ -29,6 +29,8 @@ body {
 .logo__img:hover {
   opacity: .5;
 }
+
+/* nav */
 
 .nav__menu {
   margin: 0;
@@ -53,6 +55,8 @@ body {
   color: red;
 }
 
+/* film */ 
+
 .film__date {
   display: block;
 
@@ -73,3 +77,50 @@ body {
   margin-top: 40px;
 }
 
+
+/* Button */
+.button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button__icon, .button__text {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.button__text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 10px;
+}
+
+.button__primary {
+  color: #8D0019;
+  background-color: #fff;
+}
+
+.button__link {
+  color: #fff;
+}
+
+.button__group {
+  margin-top: 70px;
+}
+
+/* venom */
+.venom {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* blood */
+
+.blood {
+  background: url('../images/blood.png') no-repeat top right,
+  #14131a url('../images/background.jpg') no-repeat center center / 100%;
+}
