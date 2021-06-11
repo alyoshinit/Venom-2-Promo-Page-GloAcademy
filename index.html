@@ -17,6 +17,14 @@
       <img width="46" height="71" src="images/logo.png" alt="logo: venom" class="logo__img">
     </a>
     <nav class="nav">
+      <button class="menu__btn">
+        <span class="menu__btn-text">Меню</span>
+        <img src="images/menu.svg" alt="icon: burger menu" class="menu__btn-icon">
+      </button>
+      <button class="menu__close">
+        <span class="menu__close-text">Закрыть</span>
+        <img src="images/arrow.svg" alt="arrow: right" class="menu__close-icon">
+      </button>
       <ul class="nav__menu">
         <li class="nav__menu-item">
           <a href="about.html" class="nav__menu-link">О фильме</a>
@@ -35,7 +43,7 @@
   </header>
 
   <div class="film">
-    <div class="film__description">
+    <div class="film__text">
       <span class="film__date">16 сентября 2021</span>
       <img src="images/venom-2.svg" alt="logo: venom-2" class="film__logo">
       <p class="film__description">
@@ -44,10 +52,10 @@
     </div>
     <!-- /.film__description -->
     <div class="button__group">
-      <button class="button button__primary">
+      <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button__primary">
         <img width="15px" src="images/play.svg" alt="icon: play" class="button__icon" />
         <span class="button__text">Смотреть трейлер</span>
-      </button>
+      </a>
       <a href="trailer.html" class="button button__link">
         <img width="15px" src="images/ticket.svg" alt="icon: ticket" class="button__icon" />
         <span class="button__text">Билеты на премьеру</span>
@@ -59,5 +67,10 @@
   </div>
   <!-- /.container -->
   <img src="images/venom.png" alt="photo: venom" class="venom">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -13,10 +13,18 @@
 <body class="primary__bg">
   <div class="container">
     <header class="header">
-    <a href="index.html" class="logo__link">
+    <a href="./index.html" class="logo__link">
       <img width="46" height="71" src="images/logo.png" alt="logo: venom" class="logo__img">
     </a>
     <nav class="nav">
+      <button class="menu__btn">
+        <span class="menu__btn-text">Меню</span>
+        <img src="images/menu.svg" alt="icon: burger menu" class="menu__btn-icon">
+      </button>
+      <button class="menu__close">
+        <span class="menu__close-text">Закрыть</span>
+        <img src="images/arrow.svg" alt="arrow: right" class="menu__close-icon">
+      </button>
       <ul class="nav__menu">
         <li class="nav__menu-item">
           <a href="about.html" class="nav__menu-link">О фильме</a>
@@ -51,9 +59,9 @@
         <li class="list__item">Пегги Лу</li>
       </ul>
       <div class="trailer">
-        <button class="play">
+        <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="play">
           <img src="images/play.svg" alt="icon: play" class="play__icon">
-        </button>
+        </a>
       </div>
     </div> <!-- /.col -->
     <div class="col ">
@@ -84,5 +92,9 @@
   <!-- /.content -->
   </div>
   <!-- /.container -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
